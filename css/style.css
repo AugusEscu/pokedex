@@ -317,6 +317,7 @@ body{
     background-color: #29292923;
     border-radius: 4rem;
     margin-bottom: 2rem;
+    padding: 2rem;
 }
 
 .previous{
@@ -354,7 +355,6 @@ body{
     justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    
 }
 
 .control-button{
@@ -368,14 +368,19 @@ body{
 }
 
 .info-img {
-    padding-top: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .img-container{
-    display: flex;
     background-color:#ffffff;
     border-radius: 4rem;
-    justify-content: center; 
+
+    position: relative;
 }
 
 .info-layout {
@@ -389,23 +394,21 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
     height: 107%;
 }
 
 .info-text{
     background-color:#ffffff;
     border-radius: 4rem;
-    padding: 2rem 0 1rem 2rem;
+    padding: 2rem 1rem 1rem 2rem;
 }
 
 .pokemon-info{
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
-    padding:1.3rem 0 3rem 4rem;
+    padding: 1.3rem 1rem 6rem 4rem;
     gap: 2rem;  
-    border: 0.2rem;
     border-radius: 4rem;
     width: 80%;
     height: 55%;
@@ -415,7 +418,6 @@ body{
 .container-stats{
     display: flex;
     align-items: center;
-    margin-top: 1rem;
     background-color:rgb(61, 61, 61);
     padding: 2rem;
     border-radius: 4rem;
@@ -429,10 +431,6 @@ body{
 
     .main-info{
         padding: 1.6rem 1.5rem 1.5rem 1.5rem ;
-    }
-
-    .info-text{
-        margin-right: 1rem;
     }
 
     .info-layout{
@@ -450,7 +448,40 @@ body{
 
 }
 
-@media screen and (min-width: 1015px){
+@media screen and (min-width: 800px){
+    .card-evolution{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-info{
+        padding-top: 2rem;
+    }
+    .img-container{
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .info-layout{
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .info-text{
+        margin-right: 1rem;
+    }
+
+    .pokemon-info{
+        width: 100%; 
+        margin: 0.5rem 2rem 0 0;
+    }
+
+    .container-stats{
+        width: 90%;
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1120px){
 
     .info-text{
         margin: 0 2rem 0 0;
@@ -463,6 +494,10 @@ body{
 
     .info-layout{
         grid-template-columns: 2fr 2fr;
+    }
+
+    .info-text{
+        margin-right: 1rem;
     }
 
     .pokemon-info{
