@@ -12,50 +12,53 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-header"> 
-                <a href="../index.html">
-                    <img src="../assets/Poke.png" alt="Logo Pokedex" class="navbar-logo" >
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid d-flex align-items-center">
+                <a href="/index.html" class="logo-container">
+                    <img src="/assets/Poke.png" alt="Pokeball" class="navbar-logo">
                 </a>
-                <a href="../index.html">
-                    <h1 class="navbar-title">Pokedex</h1>
-                </a>
-            </div>
-
-            <form class="navbar-search">
-                <div class="searchbar">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
-                    <input type="search" placeholder="Buscar Pokémon" aria-label="Buscar Pokémon">
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pokedex</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end flex-grow-1 pb-3 align-items-center">
+                        <form class="d-flex mt-3" role="search">   
+                            <input class="searchbar me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="button-search" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-                <button type="submit" class="button-search">Buscar</button>
-            </form>
+            </div>
         </nav>
     </header>
 
     <main class="main-subpage">
 
+        <div class="control-button">
+            <div class="previous">
+                <h2>Previous</h2>
+            </div>
+
+            <div class="next">
+                <h2>Next</h2>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>Charmander#004</h1>
+        </div>
+
         <div class="main-info">
 
-            <div class="control-button">
-                <div class="previous">
-                    <h2>Previous</h2>
-                </div>
-    
-                <div class="next">
-                    <h2>Next</h2>
-                </div>
-            </div>
-
-            <div class="title">
-                <h1>Charmander#004</h1>
-            </div>
             
             <div class="info-layout">
                 
                 <div class="img-container">
-                    <img src="../assets/4.png" alt="charmander" class="info-img">
+                    <img src="../assets/pokemons/4charmander.png" alt="charmander" class="info-img">
                 </div>
 
                 <div class="container-info">
@@ -146,7 +149,7 @@
                         <div class="pokemons">
                             <p class="pokemon-number">#004</p>
                             <div class="pokemon-image">
-                                <img src="../assets/4.png" alt="charmander">
+                                <img src="../assets/pokemons/4charmander.png" alt="charmander">
                             </div>
                             <div class="info-pokemon">
                                 <div class="container">
@@ -164,7 +167,7 @@
                         <div class="pokemons">
                             <p class="pokemon-number">#005</p>
                             <div class="pokemon-image">
-                                <img src="../assets/5.png" alt="charmeleon">
+                                <img src="../assets/pokemons/5charmeleon.png" alt="charmeleon">
                             </div>
                             <div class="info-pokemon">
                                 <div class="container">
@@ -182,7 +185,7 @@
                         <div class="pokemons">
                             <p class="pokemon-number">#006</p>
                             <div class="pokemon-image">
-                                <img src="../assets/6.png" alt="charizard">
+                                <img src="../assets/pokemons/6charizard.png" alt="charizard">
                             </div>
                             <div class="info-pokemon">
                                 <div class="container">

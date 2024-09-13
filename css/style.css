@@ -35,6 +35,7 @@
     --type-fairy: #F0B6BC;
 }
 
+
 .hola{
     background-color:#6890F0;
     border: 1px solid #7038F8;
@@ -114,7 +115,14 @@
 }
 
 .btn-danger{
-    width: 29.2rem;
+    width: 29rem;
+    border-radius: 2rem;
+    height: 60px;
+}
+
+.btn-secondary{
+    border-radius: 2rem;
+    height: 60px;
 }
 
 body{
@@ -135,7 +143,7 @@ body{
 }
 
 .pokemon-image img {
-    max-width: 10rem;
+    max-width: 15rem;
 }
 
 .pokemon-image {
@@ -172,7 +180,7 @@ body{
 }
 
 .pokemons {
-    border-radius: 1rem;
+    border-radius: 3rem;
     background-color: white;
     box-shadow: 0 0 3rem -1rem rgba(0, 0, 0,.25);
     padding-block: 1rem;
@@ -257,73 +265,41 @@ body{
 /* ---------------------------- NAVBAR ------------------------ */
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: white;
-    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5);
-}
-
-.nav-header{
-    display: flex;
-    align-items: center;
-}
-
-.nav-header a{
-    text-decoration: none;
-    color: inherit;
-}
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 4rem;
+    height: 90px;
+    position: relative;
+    box-shadow: 1rem 1rem 2rem -1rem rgba(0, 0, 0, 0.5);
+  }
 
 .navbar-logo {
-    height: 100px; 
+    max-width: 110px;
+    position: absolute;
+    transform: 
+    translateX(-20%);
 }
 
-.navbar-search {
+.logo-container {
     display: flex;
-    align-items: center;
-}
-
-.navbar-title{
-    text-transform: uppercase;
-    font-size: 2rem; 
-    font-weight: 800;
-    margin: 1rem;
+    align-items: center; 
+    
 }
 
 .searchbar {
-    display: flex;
-    align-items: center;
-    border:.25rem solid rgb(61, 61, 61); 
     border-radius: 2rem;
-    padding: .75rem;
-    margin-right: 1rem; 
+    height: 65px;
+    padding: 0.75rem;
+    border: solid 0.1rem rgb(61, 61, 61);
+    width: 300px;
 }
 
-.icon-search {
-    width: 1rem; 
-    margin-right: .5rem; 
-}
-
-input[type="search"] {
-    border: none; 
-    outline: none; 
-    padding: 5px; 
-    width: 200px; 
-}
-
-.button-search {
-    background-color: #cc2f2f; 
-    color: white; 
-    border: none; 
-    border-radius: 2rem; 
-    padding: 1.3rem 1.5rem; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
-
-.button-search:hover {
-    background-color: #ad2222; 
+.navbar .button-search {
+    background-color: #cc2f2f;
+    border: none;
+    border-radius: 2rem;
+    padding: 0px 15px 0px 15px;
+    color: white;
 }
 
 /*--------------------------- Footer ----------------------------------*/
@@ -337,9 +313,10 @@ input[type="search"] {
 .main-info{
 
     margin: 0 auto;
-    max-width: 1300px;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 1rem;
+    max-width: 1200px;
+    background-color: #29292923;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
 }
 
 .previous{
@@ -381,8 +358,6 @@ input[type="search"] {
 }
 
 .control-button{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-around;
     height: 4rem;
@@ -397,21 +372,16 @@ input[type="search"] {
 }
 
 .img-container{
-    margin: 0px 30px 0px 20px;
     display: flex;
-    background-color:#33333318;
-    margin-left: 2rem ;
-    height: 107%;
-    border-radius: 1rem;
-    justify-content: center;
-    position: relative; 
+    background-color:#ffffff;
+    border-radius: 4rem;
+    justify-content: center; 
 }
-
 
 .info-layout {
     display: grid;
     grid-template-rows: 2fr 2fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .container-info{
@@ -424,23 +394,21 @@ input[type="search"] {
 }
 
 .info-text{
-    background-color:#bebebe67;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 80%;
+    background-color:#ffffff;
+    border-radius: 4rem;
+    padding: 2rem 0 1rem 2rem;
 }
 
 .pokemon-info{
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
-    padding:2rem;
+    padding:1.3rem 0 3rem 4rem;
     gap: 2rem;  
     border: 0.2rem;
-    border-radius: 1rem;
-    border-width: 100px;
+    border-radius: 4rem;
     width: 80%;
-    overflow: hidden;
+    height: 55%;
     background-color:  #cc2f2f; 
 }
 
@@ -448,16 +416,32 @@ input[type="search"] {
     display: flex;
     align-items: center;
     margin-top: 1rem;
-    background-color:#3333336b;
+    background-color:rgb(61, 61, 61);
     padding: 2rem;
-    border-radius: 1rem;
-    margin: -0.6rem 2rem -0.6rem 2rem
+    border-radius: 4rem;
+}
+
+.container-stats span{
+    color:white
 }
 
 @media screen and (min-width: 0px){
+
+    .main-info{
+        padding: 1.6rem 1.5rem 1.5rem 1.5rem ;
+    }
+
+    .info-text{
+        margin-right: 1rem;
+    }
+
     .info-layout{
         grid-template-columns: 2fr;
         grid-row: 2r;
+    }
+
+    .container-stats{
+        margin: -2rem 2rem -0.6rem 2rem;
     }
 
     .card-evolution{
@@ -467,8 +451,23 @@ input[type="search"] {
 }
 
 @media screen and (min-width: 1015px){
+
+    .info-text{
+        margin: 0 2rem 0 0;
+        width: 100%;
+    }
+
+    .main-info{
+        padding-top: 2rem;
+    }
+
     .info-layout{
         grid-template-columns: 2fr 2fr;
+    }
+
+    .pokemon-info{
+        width: 100%; 
+        margin: 0.5rem 2rem 0 0;
     }
 
     .card-evolution{
@@ -477,12 +476,12 @@ input[type="search"] {
 
     .img-container{
         width: 90%;
-        margin-left: 4rem;
+        margin-left: 1rem;
     }
 
     .container-stats{
         width: 90%;
-        margin: 1rem 0rem 0rem 4rem;
+        margin: 1rem 0rem 0rem 1rem;
     }
 }
 
@@ -498,6 +497,7 @@ input[type="search"] {
     gap: 20px;
     flex: 1;
     padding-left: 1.5rem;
+    margin-top: 210¿;
 }
 
 .stat-group{
@@ -527,19 +527,9 @@ input[type="search"] {
 .evolution{
     position: relative;
     background-color:rgb(61, 61, 61);
-    margin: 2rem;
+    margin: 2rem 1rem 0.6rem 1rem;
     padding: 2rem;
-    border-top-right-radius: 0.8rem;
-}
-
-.evolution::before{
-    position: absolute;
-    content: "";
-    background: white;
-    bottom: 0;
-    left: 0;
-    border-right: 30px solid rgb(61, 61, 61);
-    border-bottom: 30px solid white ;
+    border-radius: 4rem;
 }
 
 .evolution-title{

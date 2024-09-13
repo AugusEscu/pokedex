@@ -14,25 +14,27 @@
 <body>
     
     <header>
-        <nav class="navbar">
-            <div class="nav-header"> 
-                <a href="index.html">
-                    <img src="./assets/Poke.png" alt="Logo Pokedex" class="navbar-logo" >
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid d-flex align-items-center">
+                <a href="/index.html" class="logo-container">
+                    <img src="/assets/Poke.png" alt="Pokeball" class="navbar-logo">
                 </a>
-                <a href="index.html">
-                    <h1 class="navbar-title">Pokedex</h1>
-                </a>
-            </div>
-
-            <form class="navbar-search">
-                <div class="searchbar">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
-                    <input type="search" placeholder="Buscar Pokémon" aria-label="Buscar Pokémon">
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pokedex</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end flex-grow-1 pb-3 align-items-center">
+                        <form class="d-flex mt-3" role="search">   
+                            <input class="searchbar me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="button-search" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-                <button type="submit" class="button-search">Buscar</button>
-            </form>
+            </div>
         </nav>
     </header>
     
@@ -49,7 +51,7 @@
 
             <div class="dropdown">
 
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn btn-secondary dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./assets/searchball.png" alt="pokeball" class="minimalist-icon m-1">
                             Sort by
                         </a>
@@ -69,7 +71,7 @@
                 <div class="pokemons">
                     <p class="pokemon-number">#001</p>
                     <div class="pokemon-image">
-                        <img src="./assets/1bulbasaur/1.png" alt="Bulbasaur">
+                        <img src="/assets/pokemons/1bulbasaur.png" alt="Bulbasaur">
                     </div>
                     <div class="info-pokemon">
                         <div class="container">
@@ -88,7 +90,7 @@
                 <div class="pokemons">
                     <p class="pokemon-number">#002</p>
                     <div class="pokemon-image">
-                        <img src="./assets/2ivysaur/2.png" alt="ivysaur">
+                        <img src="/assets/pokemons/2ivysaur.png" alt="ivysaur">
                     </div>
                     <div class="info-pokemon">
                         <div class="container">
@@ -107,7 +109,7 @@
                 <div class="pokemons">
                     <p class="pokemon-number">#003</p>
                     <div class="pokemon-image">
-                        <img src="./assets/3venusaur/3.png" alt="venusaur">
+                        <img src="/assets/pokemons/3venusaur.png" alt="venusaur">
                     </div>
                     <div class="info-pokemon">
                         <div class="container">
@@ -126,7 +128,7 @@
                 <div class="pokemons">
                     <p class="pokemon-number">#004</p>
                     <div class="pokemon-image">
-                        <img src="./assets/4.png" alt="charmander">
+                        <img src="/assets/pokemons/4charmander.png" alt="charmander">
                     </div>
                     <div class="info-pokemon">
                         <div class="container">
@@ -144,7 +146,7 @@
                 <div class="pokemons">
                     <p class="pokemon-number">#005</p>
                     <div class="pokemon-image">
-                        <img src="./assets/5.png" alt="charmeleon">
+                        <img src="/assets/pokemons/5charmeleon.png" alt="charmeleon">
                     </div>
                     <div class="info-pokemon">
                         <div class="container">
@@ -162,7 +164,7 @@
                 <div class="pokemons">
                     <p class="pokemon-number">#006</p>
                     <div class="pokemon-image">
-                        <img src="./assets/6.png" alt="charizard">
+                        <img src="/assets/pokemons/6charizard.png" alt="charizard">
                     </div>
                     <div class="info-pokemon">
                         <div class="container">
@@ -176,63 +178,6 @@
                     </div>
                 </div>
             </a>
-
-            <a href="./pages/pokemon_details.html" class="pokemon-link">
-                <div class="pokemons">
-                    <p class="pokemon-number">#092</p>
-                    <div class="pokemon-image">
-                        <img src="./assets/gastly.png" alt="Gastly">
-                    </div>
-                    <div class="info-pokemon">
-                        <div class="container">
-                            <p class="pokemons-id">#092</p>
-                            <h2 class="pokemon-name">Gastly</h2>
-                        </div>
-                        <div class="pokemon-types">
-                            <p class="ghost type">GHOST</p>
-                            <p class="poison type">POISON</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./pages/pokemon_details.html" class="pokemon-link">
-                <div class="pokemons">
-                    <p class="pokemon-number">#093</p>
-                    <div class="pokemon-image">
-                        <img src="./assets/haunter.png" alt="Haunter">
-                    </div>
-                    <div class="info-pokemon">
-                        <div class="container">
-                            <p class="pokemons-id">#093</p>
-                            <h2 class="pokemon-name">Haunter</h2>
-                        </div>
-                        <div class="pokemon-types">
-                            <p class="ghost type">GHOST</p>
-                            <p class="poison type">POISON</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="./pages/pokemon_details.html" class="pokemon-link">
-                <div class="pokemons">
-                    <p class="pokemon-number">#094</p>
-                    <div class="pokemon-image">
-                        <img src="./assets/gengar.png" alt="Gengar">
-                    </div>
-                    <div class="info-pokemon">
-                        <div class="container">
-                            <p class="pokemons-id">#094</p>
-                            <h2 class="pokemon-name">Gengar</h2>
-                        </div>
-                        <div class="pokemon-types">
-                            <p class="ghost type">GHOST</p>
-                            <p class="poison type">POISON</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
     </main>
 
     <footer class="bg-dark py-3">
@@ -243,7 +188,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 
 </body>
 
