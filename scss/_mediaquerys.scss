@@ -1,0 +1,22 @@
+/* mdiaquerys pagina principal */
+
+@media screen and (min-width: 0px) {
+    .all-pokemons{
+        grid-template-columns: 1fr ;
+    }
+    .pokemons{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 735px) {
+    .all-pokemons{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .all-pokemons{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
