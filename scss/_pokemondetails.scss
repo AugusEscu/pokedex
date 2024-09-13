@@ -1,0 +1,138 @@
+/* subpagina, ordenada por contenedores */
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 33%;
+}
+
+.main-info{
+    margin: 0 auto;
+    max-width: 1210px;
+    background-color: #29292923;
+    box-shadow: 0 0 4rem -1rem rgba(0, 0, 0,.25);
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.img-container{
+    background-color:#ffffff;
+    border-radius: 4rem;
+    position: relative;
+}
+
+.info-img {
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.info-layout {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    gap: 1rem;
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 107%;
+    margin-bottom: 1rem;
+}
+
+.info-text{
+    background-color:#ffffff;
+    border-radius: 4rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.pokemon-info{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    padding: 1.3rem 1rem 6rem 4rem; 
+    border-radius: 4rem;
+    height: 55%;
+    width: 100%;
+    background-color:  #cc2f2f; 
+}
+
+.pokemon-info p{
+    color: white;
+    font-weight: 500;
+}
+
+.container-stats{
+    display: flex;
+    align-items: center;
+    background-color:rgb(61, 61, 61);
+    padding: 2rem;
+    border-radius: 4rem;
+}
+
+.container-stats span{
+    color:white
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    padding-left: 1.5rem;
+}
+
+.stat-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-group span{
+    flex: 20%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 30px;
+    background-color:rgb(65, 173, 245);
+    border-radius: 10px;
+    margin: 0px 1px 0px 15px;
+}
+
+.stat-group span{
+    width: 20px;
+}
+
+.evolution{
+    position: relative;
+    background-color:rgb(61, 61, 61);
+    margin: 2rem 1rem 0.6rem 1rem;
+    padding: 2rem;
+    border-radius: 4rem;
+}
+
+.evolution-title{
+    color: white;
+}
+
+.card-evolution{
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem; 
+}
+
+.evolution a{
+    text-decoration: none; 
+    color: inherit; 
+}

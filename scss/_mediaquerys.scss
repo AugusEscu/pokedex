@@ -20,3 +20,66 @@
         grid-template-columns: 1fr 1fr 1fr ;
     }
 }
+
+/* mediaquerys subpagina */
+
+@media screen and (min-width: 0px){
+
+    .main-info{
+        padding: 1.6rem 1.5rem 1.5rem 1.5rem ;
+    }
+
+    .info-layout{
+        grid-template-columns: 2fr;
+        grid-row: 2fr;
+    }
+
+    .container-stats{
+        margin-top: -1.5rem;
+    }
+
+    .card-evolution{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 770px){
+
+    .card-evolution{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-info{
+        padding-top: 2rem;
+    }
+    .img-container{
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .info-layout{
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .info-text{
+        margin-right: 2rem;
+    }
+
+    .pokemon-info{
+        width: 100%; 
+        margin: 0.5rem 2rem 0 0;
+    }
+
+    .container-stats{
+        width: 90%;
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1120px){
+
+    .card-evolution{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
