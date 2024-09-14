@@ -17,9 +17,15 @@
     .navbar-logo {
         max-width: 110px;
         position: absolute;
-        transform: 
-        translateX(-20%);
+        transform: translateX(-20%) rotate(-30deg);
+        transition: transform 0.3s;
+        transform-origin: center;
     }
+
+    .navbar-logo:hover {
+        transform: translateX(-20%) rotate(-570deg); 
+    }
+
 
     .searchbar {
         border-radius: 2rem;
@@ -27,12 +33,4 @@
         padding: 0.75rem;
         border: solid 0.1rem rgb(61, 61, 61);
         width: 300px;
-    }
-
-    .button-search {
-        background-color: #cc2f2f;
-        border: none;
-        border-radius: 2rem;
-        padding: 0px 15px 0px 15px;
-        color: white;
     }
