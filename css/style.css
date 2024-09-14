@@ -290,6 +290,10 @@
   margin-bottom: 1.5rem;
   width: 33%;
 }
+.title h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 .main-info {
   margin: 0 auto;
