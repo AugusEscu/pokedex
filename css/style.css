@@ -79,7 +79,7 @@
 }
 .topsubpage h2 {
   color: white;
-  font-size: clamp(16px, 3vw, 50px);
+  font-size: 30px;
 }
 
 .next {
@@ -299,6 +299,12 @@
 @media screen and (min-width: 1120px) {
   .card-evolution {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* buttons subpage mediaquery */
+@media screen and (max-width: 770px) {
+  .topsubpage h2 {
+    font-size: 4vw;
   }
 }
 /* subpagina, ordenada por contenedores */

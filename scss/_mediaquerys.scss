@@ -89,3 +89,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+/* buttons subpage mediaquery */
+
+@media screen and (max-width: 770px){
+    .topsubpage h2{
+        font-size: 4vw;
+    }
+}
