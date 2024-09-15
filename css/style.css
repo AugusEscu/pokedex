@@ -79,6 +79,7 @@
 }
 .topsubpage h2 {
   color: white;
+  font-size: clamp(16px, 3vw, 50px);
 }
 
 .next {
@@ -93,6 +94,7 @@
   margin-right: 3.6rem;
   height: 80%;
   width: 100%;
+  min-width: 100px;
   transition: background-color 0.2s;
 }
 
@@ -108,12 +110,15 @@
   margin-left: 3.6rem;
   height: 80%;
   width: 100%;
+  min-width: 100px;
   transition: background-color 0.2s;
 }
 
 .prev-next {
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
   padding-bottom: 0.5rem;
 }
 
@@ -204,11 +209,13 @@
   border-radius: 0.8rem;
   font-size: 0.75rem;
   font-weight: 700;
+  transition: transform 0.2s ease;
 }
 
 .pokemon-name {
   font-size: 2rem;
   font-weight: 700;
+  transition: transform 0.2s ease;
 }
 
 .pokemon-types {
@@ -219,6 +226,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0.5rem 0.5rem;
+  transition: transform 0.2s ease;
 }
 
 .type {
@@ -226,7 +234,8 @@
   border-radius: 1rem;
 }
 
-/* mdiaquerys pagina principal */
+/* navar mediaquery */
+/* mediaquerys pagina principal */
 @media screen and (min-width: 0px) {
   .all-pokemons {
     grid-template-columns: 1fr;
@@ -393,11 +402,11 @@
   align-items: center;
   gap: 20px;
 }
-
 .stat-group span {
   flex: 20%;
   font-weight: 500;
   font-size: 18px;
+  width: 20px;
 }
 
 .progress-bar {
@@ -406,10 +415,6 @@
   background-color: rgb(65, 173, 245);
   border-radius: 10px;
   margin: 0px 1px 0px 15px;
-}
-
-.stat-group span {
-  width: 20px;
 }
 
 .evolution {
@@ -565,7 +570,6 @@
 }
 
 body {
-  min-height: 100vh;
   background-image: url(../assets/background.jpg);
   background-color: #1c1c1c;
   background-size: cover;

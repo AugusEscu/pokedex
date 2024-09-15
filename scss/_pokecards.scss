@@ -77,11 +77,13 @@
     border-radius: 0.8rem;
     font-size: .75rem;
     font-weight: 700;
+    transition: transform 0.2s ease;
 }
 
 .pokemon-name{
     font-size: 2rem;
     font-weight: 700;
+    transition: transform 0.2s ease;
 }
 
 .pokemon-types {
@@ -92,6 +94,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 0.5rem 0.5rem;
+    transition: transform 0.2s ease;
 }
 
 .type{

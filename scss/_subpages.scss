@@ -99,12 +99,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.stat-group span{
-    flex: 20%;
-    font-weight: 500;
-    font-size: 18px;
+    span{
+        flex: 20%;
+        font-weight: 500;
+        font-size: 18px;
+        width: 20px;
+        }
+    
 }
 
 .progress-bar{
@@ -113,10 +114,6 @@
     background-color:rgb(65, 173, 245);
     border-radius: 10px;
     margin: 0px 1px 0px 15px;
-}
-
-.stat-group span{
-    width: 20px;
 }
 
 .evolution{
