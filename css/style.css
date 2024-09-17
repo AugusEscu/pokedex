@@ -58,6 +58,10 @@
   border-radius: 2rem;
   height: 60px;
 }
+.btn-danger:hover .minimalist-icon {
+  transform: rotate(360deg);
+  animation-play-state: running;
+}
 
 .btn-secondary {
   border-radius: 2rem;
@@ -66,6 +70,9 @@
 
 .minimalist-icon {
   max-width: 30px;
+  transition: 0.5s;
+  animation: rotar 0.5s infinite;
+  animation-play-state: paused;
 }
 
 /*subpage buttons*/
@@ -682,6 +689,14 @@
   }
   100% {
     transform: translate(-50%, -50%); /* Regresa a la posición original */
+  }
+}
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* main page, estructura ordenada por contenedores*/

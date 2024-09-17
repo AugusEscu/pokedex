@@ -15,10 +15,16 @@
 
 /*main page buttons*/
 
+
 .btn-danger{
     width: 29rem;
     border-radius: 2rem;
     height: 60px;
+
+    &:hover .minimalist-icon{
+        transform: rotate(360deg);
+        animation-play-state: running;
+    }
 }
 
 .btn-secondary{
@@ -28,7 +34,11 @@
 
 .minimalist-icon{
     max-width: 30px;
+    transition: 0.5s;
+    animation: rotar 0.5s infinite;
+    animation-play-state: paused;
 }
+
 
 /*subpage buttons*/
 
