@@ -19,12 +19,13 @@
     box-shadow: 0 0 4rem -1rem rgba(0, 0, 0,.25);
     border-radius: 4rem;
     margin-bottom: 2rem;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 4rem;
 }
 
 .img-container{
     background-color:#ffffff;
     border-radius: 4rem;
+    min-width: 300px;
     position: relative;
 }
 
@@ -36,6 +37,11 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+
+    &:hover{
+        animation: jump 0.5s ease;
+    }    
 }
 
 .info-layout {
@@ -49,8 +55,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    height: 107%;
-    margin-bottom: 1rem;
 }
 
 .info-text{
@@ -104,8 +108,7 @@
         font-weight: 500;
         font-size: 18px;
         width: 20px;
-        }
-    
+    }
 }
 
 .progress-bar{
@@ -117,11 +120,10 @@
 }
 
 .evolution{
-    position: relative;
     background-color:rgb(61, 61, 61);
-    margin: 2rem 1rem 0.6rem 1rem;
-    padding: 2rem;
     border-radius: 4rem;
+    margin-top: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 .evolution-title{
@@ -129,12 +131,34 @@
 }
 
 .card-evolution{
-    margin-top: 1rem;
     display: grid;
+    align-items: center;
     gap: 1rem; 
 }
 
 .evolution a{
     text-decoration: none; 
     color: inherit; 
+}
+
+.poketype-info{}
+
+.poketypes-container{
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4rem;
+}
+
+.poketypes{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weakness{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }

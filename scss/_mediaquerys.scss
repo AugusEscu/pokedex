@@ -1,5 +1,5 @@
-/* navar mediaquery */
 
+/* navar mediaquery */
 @media screen and (max-width: 700px){
     
 }
@@ -32,53 +32,54 @@
 @media screen and (min-width: 0px){
 
     .main-info{
-        padding: 1.6rem 1.5rem 1.5rem 1.5rem ;
+        padding: 1.5rem;
     }
 
     .info-layout{
-        grid-template-columns: 2fr;
-        grid-row: 2fr;
+        grid-template-columns: 100%;
     }
 
     .container-stats{
-        margin-top: -1.5rem;
+        margin-top: -3.7rem;
     }
 
     .card-evolution{
         grid-template-columns: 1fr;
     }
 
+    .evolution{
+        margin-top: 15px;
+    }
+
 }
 
-@media screen and (min-width: 770px){
+@media screen and (min-width: 910px){
+
+    .main-info{
+        padding: 4rem;
+    }
 
     .card-evolution{
         grid-template-columns: 1fr 1fr;
     }
-    .main-info{
-        padding-top: 2rem;
-    }
-    .img-container{
-        width: 90%;
-        margin-left: 1rem;
+
+    .evolution{
+        margin-top: 2rem;
     }
 
     .info-layout{
         grid-template-columns: 2fr 2fr;
-    }
-
-    .info-text{
-        margin-right: 2rem;
-    }
-
-    .pokemon-info{
-        width: 100%; 
-        margin: 0.5rem 2rem 0 0;
+        grid-template-rows: 2fr 2fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
     }
 
     .container-stats{
-        width: 90%;
-        margin: 1rem 0rem 0rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .poketypes-container{
+        margin-top: -3.5rem;
     }
     
 }
