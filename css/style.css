@@ -1,40 +1,31 @@
 @charset "UTF-8";
 /* navbar, ordenada por contenedores */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-.navbar {
-  background-color: rgb(255, 255, 255);
-  margin: 0 2px 20px 10px;
-  min-height: 60px;
-  border-radius: 4rem;
-  position: relative;
+header {
+  position: sticky;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
   box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.582);
 }
 
-.logo-container {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo {
-  max-width: 110px;
-  position: absolute;
-  transform: translateX(-20%) rotate(-30deg);
+.nav-logo {
+  margin-block: -0.5rem;
+  min-height: 60px;
+  max-height: 5vh;
+  transform: rotate(-30deg);
   transition: transform 0.3s;
   transform-origin: center;
 }
 
-.navbar-logo:hover {
-  transform: translateX(-20%) rotate(-570deg);
+.nav-logo:hover {
+  transform: rotate(-570deg);
 }
 
-.searchbar {
-  border-radius: 2rem;
-  height: 65px;
-  padding: 0.75rem;
-  border: solid 0.1rem rgb(61, 61, 61);
-  width: 300px;
+.pokemon-search {
+  height: 45px;
 }
 
 .pokecomp {
@@ -59,10 +50,16 @@
 }
 
 /*main page buttons*/
+.btn-outline-light {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
 .btn {
   border-radius: 2rem;
   text-transform: uppercase;
   font-weight: 600;
+  box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.582);
 }
 
 .btn-primary {
@@ -784,7 +781,7 @@
 
 .vacio {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #616161;
 }
 
@@ -819,7 +816,7 @@
 }
 
 .hero {
-  height: 100vh;
+  height: 93vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -845,7 +842,7 @@
 }
 
 .hero-text h1 {
-  font-size: clamp(2rem, 20vw, 500px);
+  font-size: clamp(2rem, 18vw, 500px);
   line-height: 0.8;
   font-weight: 700;
   margin-inline: 0.5rem;
@@ -857,15 +854,17 @@
 
 /* main page, estructura ordenada por contenedores*/
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
+  max-width: 100vw;
   background-image: url(../assets/background.jpg);
   background-size: cover;
   backdrop-filter: brightness(0.7);
@@ -873,6 +872,7 @@ body {
 
 .main-page {
   min-height: 100vh;
+  margin-bottom: 1rem;
 }
 
 .pokedex-container {
@@ -882,6 +882,10 @@ body {
   background-image: url(../assets/background.jpg);
   border-radius: 3rem;
   box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.25);
+}
+
+.mainsection {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
-.hero{
-    height: 100vh;
+.hero{  
+    height: 93vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -25,7 +25,7 @@
   }
   
   .hero-text h1{
-    font-size: clamp(2rem, 20vw, 500px);
+    font-size: clamp(2rem, 18vw, 500px);
     line-height: 0.8;
     font-weight: 700;
     margin-inline: .5rem;

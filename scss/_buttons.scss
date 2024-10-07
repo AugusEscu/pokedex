@@ -15,10 +15,16 @@
 
 /*main page buttons*/
 
+.btn-outline-light{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
 .btn{
     border-radius: 2rem;
     text-transform: uppercase;
     font-weight: 600;
+    box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.582); 
   }
   
   .btn-primary{

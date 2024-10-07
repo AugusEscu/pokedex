@@ -1,38 +1,27 @@
-/* navbar, ordenada por contenedores */
+/* navbar, ordenada por contenedores */   
 
-
-
-.navbar { 
-    background-color: rgb(255, 255, 255);
-    margin: 0 2px 20px 10px;
-    min-height: 60px;    
-    border-radius: 4rem; 
-    position: relative;
+header{
+    position: sticky; 
+    z-index: 1000; 
+    width: 100%;  
+    top: 0;
+    left: 0;   
+    background-color: white; 
     box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.582); 
 }
-    .logo-container {
-        margin-top: 1rem; 
-        margin-left: 1rem;
-        display: flex;
-        align-items: center;    
-    }
+.nav-logo{ 
+    margin-block: -.5rem;
+    min-height: 60px;
+    max-height: 5vh;
+    transform: rotate(-30deg);
+    transition: transform 0.3s;
+    transform-origin: center;
+}
 
-    .navbar-logo {
-        max-width: 110px;
-        position: absolute;
-        transform: translateX(-20%) rotate(-30deg);
-        transition: transform 0.3s;
-        transform-origin: center;
-    }
+.nav-logo:hover { 
+    transform: rotate(-570deg);  
+}
 
-    .navbar-logo:hover {
-        transform: translateX(-20%) rotate(-570deg); 
-    }
-
-    .searchbar {
-        border-radius: 2rem;
-        height: 65px;
-        padding: 0.75rem;
-        border: solid 0.1rem rgb(61, 61, 61);
-        width: 300px;
-    }
+.pokemon-search{
+    height: 45px;    
+}
