@@ -2,16 +2,16 @@
 
 .all-pokemons{
     display: grid;
-    gap: 1rem;
-}
-
-    .all-pokemons a {
+    gap: 1rem;  
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    a {
         text-decoration: none; 
         color: inherit; 
     }
+}
 
 .pokemons {
-    min-width: 335px;
+    height: auto; 
     border-radius: 3rem;
     background-color: white;
     box-shadow: 0 0 3rem -1rem rgba(0, 0, 0,.25);
@@ -20,7 +20,6 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    max-width: 500px;
     transition: transform 0.2s ease; 
 }
     .pokemons:hover {

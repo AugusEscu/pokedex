@@ -1,38 +1,10 @@
 
-/* navar mediaquery */
-@media screen and (max-width: 700px){
-    
-}
-
-/* mediaquerys pagina principal */
-
-@media screen and (min-width: 0px) {
-    .all-pokemons{
-        grid-template-columns: 1fr ;
-    }
-    .pokemons{
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 735px) {
-    .all-pokemons{
-        grid-template-columns: 1fr 1fr ;
-    }
-}
-
-@media screen and (min-width: 1050px) {
-    .all-pokemons{
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
-}
-
 /* mediaquerys subpagina */
 
 @media screen and (min-width: 0px){
 
     .main-info{
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     }
 
     .info-layout{
@@ -56,7 +28,7 @@
 @media screen and (min-width: 910px){
 
     .main-info{
-        padding: 4rem;
+        padding: 2rem 4rem 4rem 4rem;
     }
 
     .card-evolution{

@@ -1,0 +1,117 @@
+.menu-hamburguesa {  
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .menu-hamburguesa span {
+    display: block;
+    background-color: #616161;
+    padding-inline: 20%;
+    padding-bottom: 8px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -21px;
+    color: white;
+  }
+  
+  .menu-hamburguesa span::before, .menu-hamburguesa span::after{
+    content: "";
+    background: transparent url(../assets/large-notch-darkgray.png) no-repeat;
+    height: 28px;
+    left: -36px;
+    position: absolute;
+    width: 38px;
+    top: 10px;
+    /* -webkit-transform:scaleY(-1); */
+    -ms-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV"
+  }
+  
+  .menu-hamburguesa span::after{
+    left: auto;
+    right: -36px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .navegacion {
+    max-height: 0; /* Oculto por defecto */
+    overflow: hidden; 
+    transition: max-height 0.2s ease-out; 
+    background-color: #616161; 
+  }
+  .navegacion span{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  .filter-container{
+    background-color: rgba(255, 255, 255, 0.884);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3%;
+    max-width: 1100px;
+    height: 250px;
+    margin: auto;
+    padding-block: 1rem;
+  }
+  
+  .list-types{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navegacion a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .vacio{ 
+    width: 100%;
+    height: 80px; 
+    background-color: #616161;
+  }
+  
+  .button-layout{
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px; 
+  }
+
+  .input-group{
+    height: 100%;
+  }
+  
+  .number-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 1%;
+    height: 100%;
+  }
+  
+  .number-filter span{
+    white-space: nowrap;
+  }
+  
+  .form-control{
+    border-radius: 2rem;
+    min-width: 120px;
+    max-width: 300px;
+  }

@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     h1{
         text-transform: uppercase;
         font-weight: 700;
@@ -15,16 +15,17 @@
 .main-info{
     margin: 0 auto;
     max-width: 1210px;
-    background-color: #29292923;
+    background-image: url(../assets/background.jpg); 
+    background-size: cover; 
     box-shadow: 0 0 4rem -1rem rgba(0, 0, 0,.25);
     border-radius: 4rem;
     margin-bottom: 2rem;
-    padding: 4rem;
+    padding: 0rem 4rem 4rem 4rem;
 }
 
-.img-container{
-    background-color:#ffffff;
-    border-radius: 4rem;
+.img-container{ 
+    background-color:#afafaf3d;      
+    border-radius: 4rem;  
     min-width: 300px;
     position: relative;
 }
@@ -58,16 +59,17 @@
 }
 
 .info-text{
-    background-color:#ffffff;
+    background-color:#afafaf3d;    
     border-radius: 4rem;
     padding: 2rem 2rem 1rem 2rem;
 }
 
 .pokemon-info{
+    row-gap: 1rem;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
-    padding: 1.3rem 1rem 6rem 4rem; 
+    padding: 2rem 1rem 6rem 4rem; 
     border-radius: 4rem;
     height: 55%;
     width: 100%;
@@ -77,11 +79,12 @@
 .pokemon-info p{
     color: white;
     font-weight: 500;
+    margin-bottom: -2px;
 }
 
 .container-stats{
     display: flex;
-    align-items: center;
+    align-items: center;  
     background-color:rgb(61, 61, 61);
     padding: 2rem;
     border-radius: 4rem;
@@ -123,17 +126,21 @@
     background-color:rgb(61, 61, 61);
     border-radius: 4rem;
     margin-top: 2rem;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .evolution-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     color: white;
+    margin-bottom: 1.7rem;
 }
 
 .card-evolution{
     display: grid;
-    align-items: center;
     gap: 1rem; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 
 .evolution a{
@@ -141,10 +148,8 @@
     color: inherit; 
 }
 
-.poketype-info{}
-
 .poketypes-container{
-    background-color: #ffffff;
+    background-color:#afafaf3d;     
     padding: 2rem;
     border-radius: 4rem;
 }

@@ -15,21 +15,47 @@
 
 /*main page buttons*/
 
+.btn{
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .btn-primary{
+    height: 100%;
+    width:clamp(80px, 200px, 200px);
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0,.25); 
+  }
+
+  .btn-search{   
+    background-color: #cc2f2f; 
+    margin-inline: 1%;
+    height: 100%;
+    width:clamp(80px, 200px, 200px);
+    color: white;
+  } 
+
+  .btn-search:hover{ 
+    background-color: #b32626;
+    color: white; 
+}  
 
 .btn-danger{
+    background-color: #cc2f2f;
+    color: white;
     width: 29rem;
     border-radius: 2rem;
-    height: 60px;
+    height: 60px; 
 
     &:hover .minimalist-icon{
         transform: rotate(360deg);
         animation-play-state: running;
     }
 }
-
 .btn-secondary{
     border-radius: 2rem;
     height: 60px;
+    background-color: #616161;
 }
 
 .minimalist-icon{
@@ -42,7 +68,7 @@
 
 /*subpage buttons*/
 
-.topsubpage{
+.topsubpage{ 
     margin: auto;
     max-width: 1310px;
     margin: auto;
@@ -61,7 +87,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:rgb(61, 61, 61); 
+    background-color: #616161; 
     border-bottom-right-radius: 3rem;
     padding: .5rem 2rem .5rem 2rem;
     margin-left: .1rem;
@@ -77,7 +103,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:rgb(61, 61, 61);
+    background-color: #616161;
     border-bottom-left-radius: 3rem;
     padding: .5rem 2rem .5rem 2rem;
     margin-right: .1rem;
