@@ -13,6 +13,7 @@ header {
 
 .nav-logo {
   margin-block: -0.5rem;
+  margin-inline-start: 1rem;
   min-height: 60px;
   max-height: 5vh;
   transform: rotate(-30deg);
@@ -268,6 +269,7 @@ navbar-toggler-icon {
   padding: 0.3rem 0.6rem;
   border-radius: 1rem;
   width: 80px;
+  margin-inline: 2%;
 }
 
 /* mediaquerys subpagina */

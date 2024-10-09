@@ -9,8 +9,10 @@ header{
     background-color: white; 
     box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.582); 
 }
+
 .nav-logo{ 
     margin-block: -.5rem;
+    margin-inline-start: 1rem; 
     min-height: 60px;
     max-height: 5vh;
     transform: rotate(-30deg);
